@@ -1,5 +1,5 @@
-# Generates newsletter content in email format
-# agents/writer_agent.py
+# # Generates newsletter content in email format
+# # agents/writer_agent.py
 
 import os
 import json
@@ -50,6 +50,11 @@ You are an expert newsletter writer for an AI news digest.
 
 Write a professional and engaging newsletter in HTML format ONLY (no markdown, no **bold**, no markdown-style formatting).
 
+Generate a newsletter in HTML format.
+
+IMPORTANT: Return ONLY the HTML code, starting with <html> tag.
+Do not include any explanatory text before or after the HTML.
+
 IMPORTANT:
 - Never output markdown.
 - Never output **bold**.
@@ -78,7 +83,7 @@ Return HTML exactly in this structure (curly braces escaped):
     <div style="background-color:#1a1f25; padding:20px; border-radius:10px; margin-bottom:25px;">
       <h2 style="color:#61dafb;">ARTICLE_TITLE</h2>
       <p>ARTICLE_SUMMARY</p>
-      <a href="ARTICLE_URL" style="color:#ffa500;">Read full article</a>
+      <a href="ARTICLE_URL" style="color:#ff9f1c;">Read full article</a>
     </div>
 
     <p style="margin-top:40px;">Stay tuned for more AI insights!</p>
